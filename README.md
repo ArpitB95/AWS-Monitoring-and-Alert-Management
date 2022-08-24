@@ -71,15 +71,30 @@
       
    
    
+   ## Resources that can be monitored by cloudwatch:
+   - S3
+   - EC2
+   - Load balancer
+   
+   
+   
    ### Steps to set-up an alarm for EC2:
  
  - Select your Instance and go into monitoring
  - Here we need to setup alarm if CPU utilization of EC2 instance goes more than 20%, then you should 
    receive an email.
  - so under monitoring, select first graph which is for CPU utilization and then select view in metrics.
+ 
 <img width="776" alt="alarm first" src="https://user-images.githubusercontent.com/110182832/186429234-4959ba2b-c25c-46ef-95f5-e5d750143887.png">
 
 
+
+
+
+
+
+
+- On the next page, set the threshold limit for CPU utilization, so if CPU utilization will go above from the thresold then you'll receive an email.
 
 
 <img width="844" alt="alarmsecond" src="https://user-images.githubusercontent.com/110182832/186429318-5ed0379f-bce2-4112-8907-a698ccbcee44.png">
@@ -87,8 +102,16 @@
 
 
 
+
 <img width="632" alt="alarm1" src="https://user-images.githubusercontent.com/110182832/186429398-5a3dfe81-8500-4d9d-b09d-6eacab96cafd.png">
 
+
+- Next create a new SNS topic and add your email id.
+
+![sns](https://user-images.githubusercontent.com/110182832/186476807-d6cb4859-f0fe-4ab8-aa9d-bcd027a5a7ac.png)
+
+
+- Now, create an alarm and confirm your email id from your email.
 
 
 
