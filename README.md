@@ -57,6 +57,20 @@
 ### Important link for monitoring: https://aws.amazon.com/blogs/mt/alarms-incident-management-and-remediation-in-the-cloud-with-amazon-cloudwatch/
    
    
+   
+   ## Monitoring and Alert management:
+   
+   
+   
+   
+ 
+   ![cloudwatcjjj](https://user-images.githubusercontent.com/110182832/186460534-03642422-dd0b-416b-9669-c8ef3fce4df8.png)
+
+ 
+
+      
+   
+   
    ### Steps to set-up an alarm for EC2:
  
  - Select your Instance and go into monitoring
@@ -79,3 +93,13 @@
 
 
 <img width="449" alt="alarm-2" src="https://user-images.githubusercontent.com/110182832/186429444-c5d88ddb-5023-454a-8452-363ded616540.png">
+
+
+
+
+
+
+## AWS Auto scaling and load balancer:
+
+![autoscaling and load balancer](https://user-images.githubusercontent.com/110182832/186459704-973d6d3a-50d6-434f-bbf0-caca54c62e48.png)
+
