@@ -56,3 +56,26 @@
 
 ### Important link for monitoring: https://aws.amazon.com/blogs/mt/alarms-incident-management-and-remediation-in-the-cloud-with-amazon-cloudwatch/
    
+   
+   ### Steps to set-up an alarm for EC2:
+ 
+ - Select your Instance and go into monitoring
+ - Here we need to setup alarm if CPU utilization of EC2 instance goes more than 20%, then you should 
+   receive an email.
+ - so under monitoring, select first graph which is for CPU utilization and then select view in metrics.
+<img width="776" alt="alarm first" src="https://user-images.githubusercontent.com/110182832/186429234-4959ba2b-c25c-46ef-95f5-e5d750143887.png">
+
+
+
+
+<img width="844" alt="alarmsecond" src="https://user-images.githubusercontent.com/110182832/186429318-5ed0379f-bce2-4112-8907-a698ccbcee44.png">
+
+
+
+
+<img width="632" alt="alarm1" src="https://user-images.githubusercontent.com/110182832/186429398-5a3dfe81-8500-4d9d-b09d-6eacab96cafd.png">
+
+
+
+
+<img width="449" alt="alarm-2" src="https://user-images.githubusercontent.com/110182832/186429444-c5d88ddb-5023-454a-8452-363ded616540.png">
