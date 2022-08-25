@@ -161,6 +161,16 @@ WantedBy=multi-user.target
 
 
 
+
+![load balacer](https://user-images.githubusercontent.com/110182832/186765928-91ebc8f0-6444-4d3f-802c-6f5a87e748b2.png)
+
+
+
+
+
+
+
+
 ![1](https://user-images.githubusercontent.com/110182832/186753946-0e40ac22-b656-4345-8421-9018076c011d.png)
 
 
