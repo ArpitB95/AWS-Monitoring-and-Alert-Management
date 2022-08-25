@@ -126,3 +126,85 @@
 
 ![autoscaling and load balancer](https://user-images.githubusercontent.com/110182832/186459704-973d6d3a-50d6-434f-bbf0-caca54c62e48.png)
 
+
+
+
+
+
+## - First of all, make your APP EC2 completely working and then create an image (AMI) of that EC2 instance.
+## - So, if you launch an instance from AMI and copy & paste public id of launched instance to the browser, you'll be able to see the app.
+
+## To make App EC2 works completely:
+- Install all the dependencies in the app (You can do it while creating the instance - write scipt in userdata or do it manually after creating the instance)
+- After downloading all the dependencies, we need to automate 'npm start' and for this
+- In your app instance go to /etc/systemd/system
+- 'cd /etc/systemd/system'
+- 'sudo nano npm.service'
+- add the following in to that file: (Creating service script to automate npm start)
+
+```
+[Unit]
+Description=running npm app
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/eng_virtualisation/app  ## (give path of app file from where you run npm start, where the app.js file is)
+ExecStart=/usr/bin/npm start
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
+## Steps to create Load balancer and Auto balancing group:
+
+
+
+![1](https://user-images.githubusercontent.com/110182832/186753946-0e40ac22-b656-4345-8421-9018076c011d.png)
+
+
+
+
+
+
+
+
+![2](https://user-images.githubusercontent.com/110182832/186753970-c4a5a80d-b082-482c-b756-8dfc6f72c0e9.png)
+
+
+
+
+
+
+![3](https://user-images.githubusercontent.com/110182832/186753993-e637a2e6-27a0-4f0f-8179-ef23a6d48ea7.png)
+
+
+
+
+
+![4](https://user-images.githubusercontent.com/110182832/186754015-e2b7a563-5a28-4cff-975f-3c2ee3c2fd2b.png)
+
+
+
+![5](https://user-images.githubusercontent.com/110182832/186754036-f0d5ff82-65bd-4257-8e98-28e4d28af8cb.png)
+
+
+
+
+![6-a](https://user-images.githubusercontent.com/110182832/186754071-725b4659-1db7-495a-9c95-277fea03acd2.png)
+
+
+
+
+![6-b](https://user-images.githubusercontent.com/110182832/186754084-f364b6e2-b9e2-4d69-98fe-04cc3107ee2c.png)
+
+
+
+
+![7](https://user-images.githubusercontent.com/110182832/186754096-30698de2-ba4e-4bcf-94e7-efd3108fdcc4.png)
+
+
+
+
+![8](https://user-images.githubusercontent.com/110182832/186754126-9a8ce777-db08-464d-92af-c134160b6eae.png)
